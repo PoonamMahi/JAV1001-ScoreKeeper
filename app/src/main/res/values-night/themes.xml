@@ -12,5 +12,49 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/myTextViewStyle</item>
+        <item name="materialButtonStyle">@style/myButtonStyle</item>
+        <item name="android:radioButtonStyle">@style/myRadioStyle</item>
+    </style>
+
+    <!--some colors are added in colors.xml file-->
+    <!--Giving style to top label(Cricket championship 2021)-->
+    <style name="myTextViewStyle.myLabel">
+        <item name="android:textColor" >@color/lightGreen</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:shadowColor">@color/grey</item>
+        <item name="android:shadowRadius">9.0</item>
+    </style>
+
+    <!--Giving style to textview IND and PAK-->
+    <style name="myTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor" >@color/darkgrey</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!--Giving style to textView showing scores-->
+    <style name="myTextViewStyle.score" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor" >@color/lightGreen</item>
+    </style>
+
+    <!--Giving style to buttons-->
+    <style name="myButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/grey</item>
+        <item name="rippleColor">@android:color/holo_red_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:textColor">@color/lightGreen</item>
+    </style>
+
+    <!--Giving style to radiobuttons-->
+    <style name="myRadioStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="colorControlNormal">@color/teal_700</item>
+        <item name="colorControlActivated">@android:color/holo_red_dark</item>
+        <item name="buttonTint">@color/lightGreen</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 </resources>

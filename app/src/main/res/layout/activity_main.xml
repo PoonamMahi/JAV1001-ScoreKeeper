@@ -25,11 +25,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginEnd="1dp"
             android:layout_weight="1"
-            android:background="#039BE5"
             android:gravity="center_horizontal"
+            android:orientation="vertical"
             android:padding="16dp">
 
             <TextView
@@ -41,31 +40,24 @@
 
             <Button
                 android:id="@+id/add_team1"
-                style="@style/Widget.AppCompat.Button.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+"
-                android:textSize="34sp"
-                android:textStyle="bold" />
+                android:text="+" />
 
             <TextView
                 android:id="@+id/displayScore_team1"
-                style="@style/myTextViewStyle"
+                style="@style/myTextViewStyle.score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textAlignment="center"
                 android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"/>
+                android:layout_marginBottom="2dp"
+                android:text="0" />
 
             <Button
                 android:id="@+id/sub_team1"
-                style="@style/Widget.AppCompat.Button.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-"
-                android:textSize="34sp"
-                android:textStyle="bold" />
+                android:text="-" />
 
         </LinearLayout>
 
@@ -75,45 +67,37 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="1dp"
             android:layout_weight="1"
-            android:background="#039BE5"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:padding="16dp">
 
             <TextView
                 android:id="@+id/team2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PAK"
-                style="@style/myTextViewStyle"/>
-
-            <Button
-                android:id="@+id/add_team2"
-                style="@style/Widget.AppCompat.Button.Small"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/displayScore_team2"
                 style="@style/myTextViewStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textAlignment="center"
+                android:text="PAK" />
+
+            <Button
+                android:id="@+id/add_team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/displayScore_team2"
+                style="@style/myTextViewStyle.score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"/>
+                android:layout_marginBottom="2dp"
+                android:text="0" />
 
             <Button
                 android:id="@+id/sub_team2"
-                style="@style/Widget.AppCompat.Button.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-"
-                android:textSize="34sp"
-                android:textStyle="bold" />
+                android:text="-" />
 
         </LinearLayout>
 
@@ -126,10 +110,10 @@
         android:orientation="horizontal"
         android:layout_gravity="center"
         android:layout_marginTop="2dp"
-        android:background="#83FDD835"
         android:gravity="center"
         android:paddingTop="20dp"
-        android:paddingBottom="20dp">
+        android:paddingBottom="20dp"
+        android:background="@color/lightgrey">
 
         <RadioGroup
             android:id="@+id/increaseScoreBy"
@@ -139,52 +123,56 @@
             android:layout_weight="2"
             android:checkedButton="@id/score1">
 
-        <RadioButton
-            android:id="@+id/score1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="1"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            tools:layout_editor_absoluteX="57dp"
-            tools:layout_editor_absoluteY="730dp" />
+            <RadioButton
+                android:id="@+id/score1"
+                style="@style/myRadioStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="730dp" />
 
-        <RadioButton
-            android:id="@+id/score2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="2"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            tools:layout_editor_absoluteX="215dp"
-            tools:layout_editor_absoluteY="730dp" />
+            <RadioButton
+                android:id="@+id/score2"
+                style="@style/myRadioStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:layout_editor_absoluteX="215dp"
+                tools:layout_editor_absoluteY="730dp" />
 
-        <RadioButton
-            android:id="@+id/score3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="4"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            tools:layout_editor_absoluteX="137dp"
-            tools:layout_editor_absoluteY="730dp" />
+            <RadioButton
+                android:id="@+id/score3"
+                style="@style/myRadioStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:layout_editor_absoluteX="137dp"
+                tools:layout_editor_absoluteY="730dp" />
 
-        <RadioButton
-            android:id="@+id/score4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="6"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            tools:layout_editor_absoluteX="295dp"
-            tools:layout_editor_absoluteY="730dp" />
+            <RadioButton
+                android:id="@+id/score4"
+                style="@style/myRadioStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:layout_editor_absoluteX="295dp"
+                tools:layout_editor_absoluteY="730dp" />
 
         </RadioGroup>
 
