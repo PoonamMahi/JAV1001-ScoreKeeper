@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/Users/pmahi/Desktop/MAPD/JAV1001ScoreKeeper/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/pmahi/Desktop/P_1/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14814814814814814" />
+        <entry key="app/src/main/res/layout/activity_main_pane_land.xml" value="0.2526041666666667" />
+        <entry key="app/src/main/res/layout/activity_main_pane_portrait.xml" value="0.2526041666666667" />
+        <entry key="app/src/main/res/layout/fragment_score_keeper.xml" value="0.23854166666666668" />
       </map>
     </option>
   </component>
